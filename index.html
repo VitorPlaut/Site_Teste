@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House laser | Personalizados a laser</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+<body id="topo">
+    <header class="header">
+  <div class="container">
+    <h2 class="logo">House Laser</h2>
+
+<nav class="menu">
+  <a href="#topo">Home</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="#contato">Contato</a>
+</nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content reveal">
+    <h1>Transformamos ideias em peças únicas gravadas a laser</h1>
+    <p>Personalizados premium em madeira, acrílico e metal</p>
+    <a href="produtos.html" class="btn-hero">Personalize o seu</a>
+  </div>
+</section>
+    <section class="destaque">
+  <div class="container destaque-content reveal">
+
+    <h2>Personalização que transforma presentes em memórias</h2>
+
+    <p>
+      Criamos peças exclusivas gravadas a laser, com acabamento premium
+      em madeira, acrílico e metal. Cada detalhe é pensado para surpreender.
+    </p>
+
+    <div class="destaque-itens">
+      <div>🔥 Exclusividade total</div>
+      <div>⚡ Produção rápida</div>
+      <div>🎁 Ideal para presentes e empresas</div>
+    </div>
+
+    <a href="produtos.html" class="btn-hero">
+      Ver nossos produtos
+    </a>
+  </div>
+
+
+</section>
+<footer class="footer" id="contato">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>House Laser</h3>
+      <p>Personalizados a laser com qualidade premium.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <a href="https://wa.me/5549988721313" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 House Laser Personalizados. Todos os direitos reservados.
+  </div>
+</footer>
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    reveals.forEach(reveal => {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveal.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveal.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+</script>
+<a href="https://wa.me/5549988721313" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Fale conosco no WhatsApp">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>
